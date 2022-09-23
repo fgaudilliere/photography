@@ -4,13 +4,13 @@ email: ""
 description: "Photo Journal"
 url: "https://fgaudilliere.github.io"
 baseurl: "/photography"
-facebook_username: ""
-twitter_username: ""
-instagram_username: ""
-github_username:  ""
-deviantart_username: ""
-flickr_username: ""
-discus_shortname: ""
+#facebook_username: ""
+#twitter_username: ""
+instagram_username: "floragaudilliere"
+#github_username:  ""
+#deviantart_username: ""
+#flickr_username: ""
+#discus_shortname: ""
 share: true
 
 # Owner/author information
@@ -34,7 +34,7 @@ comments :
 # Internal nav
 nav:
   - GALLERY: "https://fgaudilliere.github.io/photography/gallery/"  
-  - JOURNAL: "https://fgaudilliere.github.io/photography/journal/"
+ # - JOURNAL: "https://fgaudilliere.github.io/photography/journal/"
   - ABOUT: "https://fgaudilliere.github.io/photography/about/"
 
 # All translation keys
