@@ -30,17 +30,11 @@ images:
  - image_path: /img/galleries/Tanzania/Leopard1.jpg
    caption: Leopard
    copyright: © floragaudilliere
- - image_path: /img/galleries/Tanzania/Oiseau1.jpg
-   caption: 
-   copyright: © floragaudilliere
  - image_path: /img/galleries/Tanzania/Singe2.jpeg
    caption: Monkey
    copyright: © floragaudilliere
- - image_path: /img/galleries/Tanzania/Zebre1.jpeg
-   caption: Zebra
-   copyright: © floragaudilliere
  - image_path: /img/galleries/Tanzania/Oiseau2.jpeg
-   caption: 
+   caption:
    copyright: © floragaudilliere
  - image_path: /img/galleries/Tanzania/Singe3.JPG
    caption: Monkey
@@ -54,7 +48,7 @@ images:
  - image_path: /img/galleries/Tanzania/Singes5.JPG
    caption: Monkey
    copyright: © floragaudilliere
- - image_path: /img/galleries/Tanzania/Zebre2.jpeg
+ - image_path: /img/galleries/Tanzania/Zebre1.jpg
    caption: Zebra
    copyright: © floragaudilliere
  - image_path: /img/galleries/Tanzania/marabou.jpg
@@ -71,7 +65,7 @@ images:
 </head>
 
     <body>
- 
+
 	<section id="content" role="main">
 		<div class="wrapper">
 	<br><br>
@@ -80,16 +74,16 @@ images:
 
 			<!-- Gallery __-->
 			<div class="gallery masonry-gallery">
-		
-{% for image in page.images %}  		
+
+{% for image in page.images %}
 
 				<figure class="gallery-item">
 					<header class='gallery-icon'>
 
 <a href="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}" class="popup"  title="{{ image.caption }}" data-caption="{{ image.copyright }}">
 <img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
-						
-					</header>	
+
+					</header>
 					<figcaption class='gallery-caption'>
 						<div class="entry-summary" id="{{ image.caption }}">
 							<h3>{{image.caption}}</h3>
@@ -97,7 +91,7 @@ images:
 						</div>
 					</figcaption>
 				</figure>
-				
+
 {% endfor %}
 
 			</div>
@@ -105,7 +99,7 @@ images:
 		</div><!-- END .wrapper -->
 	</section>
 
-<!-- jQuery -->    
+<!-- jQuery -->
 
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <!-- include image popups -->
@@ -132,7 +126,7 @@ image: {
 
 <script src="{{ site.baseurl }}/js/retina.min.js"></script>
 <!-- include Masonry -->
-<script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script> 
+<script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script>
 <!-- include mousewheel plugins -->
 <script src="{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
 <!-- include carousel plugins -->
@@ -144,5 +138,5 @@ image: {
 <!-- Modernizr -->
  <script src="{{ site.baseurl }}/js/modernizr.js"></script>
 
-    
+
 </body></html>

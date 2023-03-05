@@ -3,7 +3,7 @@ layout: page
 title: "Drag Shows"
 description: ""
 active: gallery
-header-img: "/img/galleries/drag_shows/calypso1.jpg"
+header-img: "/img/galleries/drag_shows/photo5.jpg"
 album-title: "Drag Shows"
 images:
  - image_path: /img/galleries/drag_shows/coulisses1.jpg
@@ -50,10 +50,10 @@ images:
    copyright: © floragaudilliere
  - image_path: /img/galleries/drag_shows/riviere1.jpg
    caption: Rivière (Drama Queer 4)
-   copyright: © floragaudilliere 
+   copyright: © floragaudilliere
  - image_path: /img/galleries/drag_shows/riviere2.jpg
    caption: Rivière (Drama Queer 4)
-   copyright: © floragaudilliere  
+   copyright: © floragaudilliere
  - image_path: /img/galleries/drag_shows/queen_benji1.jpg
    caption:  Jinji (Drama Queer 4)
    copyright: © floragaudilliere
@@ -62,7 +62,7 @@ images:
    copyright: © floragaudilliere
  - image_path: /img/galleries/drag_shows/infame2.jpg
    caption: Infâmme (Drama Queer 4)
-   copyright: © floragaudilliere   
+   copyright: © floragaudilliere
  - image_path: /img/galleries/drag_shows/kings_sauvages1.jpg
    caption: Les Kings Sauvages (Drama Queer 4)
    copyright: © floragaudilliere
@@ -80,7 +80,7 @@ images:
 </head>
 
     <body>
- 
+
 	<section id="content" role="main">
 		<div class="wrapper">
 	<br><br>
@@ -89,16 +89,16 @@ images:
 
 			<!-- Gallery __-->
 			<div class="gallery masonry-gallery">
-		
-{% for image in page.images %}  		
+
+{% for image in page.images %}
 
 				<figure class="gallery-item">
 					<header class='gallery-icon'>
 
 <a href="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}" class="popup"  title="{{ image.caption }}" data-caption="{{ image.copyright }}">
 <img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
-						
-					</header>	
+
+					</header>
 					<figcaption class='gallery-caption'>
 						<div class="entry-summary" id="{{ image.caption }}">
 							<h3>{{image.caption}}</h3>
@@ -106,7 +106,7 @@ images:
 						</div>
 					</figcaption>
 				</figure>
-				
+
 {% endfor %}
 
 			</div>
@@ -114,7 +114,7 @@ images:
 		</div><!-- END .wrapper -->
 	</section>
 
-<!-- jQuery -->    
+<!-- jQuery -->
 
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <!-- include image popups -->
@@ -141,7 +141,7 @@ image: {
 
 <script src="{{ site.baseurl }}/js/retina.min.js"></script>
 <!-- include Masonry -->
-<script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script> 
+<script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script>
 <!-- include mousewheel plugins -->
 <script src="{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
 <!-- include carousel plugins -->
@@ -153,5 +153,5 @@ image: {
 <!-- Modernizr -->
  <script src="{{ site.baseurl }}/js/modernizr.js"></script>
 
-    
+
 </body></html>

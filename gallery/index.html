@@ -5,10 +5,14 @@ description: ""
 active: gallery
 header-img: "img/gallery-bg.jpg"
 images:
+- image_path: /img/galleries/shall_we_play8.jpg
+  gallery-folder: /gallery/shall_we_play/
+  gallery-name: Shall We Play - Festival Swing
+  gallery-date: Février 2023
  - image_path: /gallery/albums/calypso1.jpg
    gallery-folder: /gallery/drag_shows/
    gallery-name: Drag Shows
-   gallery-date: 2020-2021
+   gallery-date: 2020-2022
  - image_path: /gallery/albums/photo3.jpg
    gallery-folder: /gallery/violentes/
    gallery-name: VIOLENTES
@@ -20,7 +24,7 @@ images:
  - image_path: /gallery/albums/piano.jpg
    gallery-folder: /gallery/miscellaneous/
    gallery-name: Divers
-   gallery-date: 
+   gallery-date:
 ---
 
 <html class="no-js" lang="en">
@@ -31,25 +35,25 @@ images:
 
 
     <body class="gallery">
- 
+
 	<section id="content" role="main">
 		<div class="wrapper">
-	
+
 			<h2>{{page.title}}</h2>
-			
+
 			<!-- Gallery __-->
 			<div class="gallery masonry-gallery">
-				
-{% for image in page.images %}  	
+
+{% for image in page.images %}
 
 	               <figure class="gallery-item">
                          <figure class="effect-selena">
 					<header class='gallery-icon'>
-		       
+
 <a href="{{ site.url }}{{ site.baseurl }}{{ image.gallery-folder }}">
 <img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
 
-					</header>	
+					</header>
 					<figcaption class='gallery-caption'>
 						<div class="entry-summary">
 							<h3>{{image.gallery-name}}</h3>
@@ -58,21 +62,21 @@ images:
 					</figcaption>
                        </figure>
 				</figure>
-							
-{% endfor %}		
-				
+
+{% endfor %}
+
 			</div>
-			
+
 		</div><!-- END .wrapper -->
 	</section>
 
 
-<!-- jQuery -->    
+<!-- jQuery -->
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="{{ site.baseurl }}/js/retina.min.js"></script>
 <!-- include Masonry -->
-<script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script> 
+<script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script>
 <!-- include mousewheel plugins -->
 <script src="{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
 <!-- include carousel plugins -->
