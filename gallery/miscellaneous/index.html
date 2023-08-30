@@ -6,41 +6,32 @@ active: gallery
 header-img: "/img/galleries/miscellaneous/piano.jpg"
 album-title: "Divers"
 images:
- - image_path: /img/galleries/miscellaneous/game.jpg
-   caption: 
-   copyright: © floragaudilliere
  - image_path: /img/galleries/miscellaneous/jay.jpg
-   caption: 
-   copyright: © floragaudilliere
- - image_path: /img/galleries/miscellaneous/bat1.jpg
-   caption: 
+   caption:
    copyright: © floragaudilliere
  - image_path: /img/galleries/miscellaneous/lampe.jpg
-   caption: 
+   caption:
    copyright: © floragaudilliere
  - image_path: /img/galleries/miscellaneous/piano.jpg
-   caption: 
+   caption:
    copyright: © floragaudilliere
  - image_path: /img/galleries/miscellaneous/marche.jpg
-   caption: 
-   copyright: © floragaudilliere
- - image_path: /img/galleries/miscellaneous/perruche.jpg
-   caption: 
-   copyright: © floragaudilliere
- - image_path: /img/galleries/miscellaneous/bat2.jpg
-   caption: 
+   caption:
    copyright: © floragaudilliere
  - image_path: /img/galleries/miscellaneous/provence.jpg
-   caption: 
-   copyright: © floragaudilliere
- - image_path: /img/galleries/miscellaneous/rock.jpg
-   caption: 
-   copyright: © floragaudilliere
- - image_path: /img/galleries/miscellaneous/street.jpg
-   caption: 
+   caption:
    copyright: © floragaudilliere
  - image_path: /img/galleries/miscellaneous/wei.jpg
-   caption: 
+   caption:
+   copyright: © floragaudilliere
+ - image_path: /img/galleries/miscellaneous/pinasse.jpg
+   caption:
+   copyright: © floragaudilliere
+ - image_path: /img/galleries/miscellaneous/sdb_martinieres.jpg
+   caption:
+   copyright: © floragaudilliere
+ - image_path: /img/galleries/miscellaneous/mobile_martinieres.jpg
+   caption:
    copyright: © floragaudilliere
 ---
 
@@ -50,7 +41,7 @@ images:
 </head>
 
     <body>
- 
+
 	<section id="content" role="main">
 		<div class="wrapper">
 	<br><br>
@@ -59,16 +50,16 @@ images:
 
 			<!-- Gallery __-->
 			<div class="gallery masonry-gallery">
-		
-{% for image in page.images %}  		
+
+{% for image in page.images %}
 
 				<figure class="gallery-item">
 					<header class='gallery-icon'>
 
 <a href="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}" class="popup"  title="{{ image.caption }}" data-caption="{{ image.copyright }}">
 <img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
-						
-					</header>	
+
+					</header>
 					<figcaption class='gallery-caption'>
 						<div class="entry-summary" id="{{ image.caption }}">
 							<h3>{{image.caption}}</h3>
@@ -76,7 +67,7 @@ images:
 						</div>
 					</figcaption>
 				</figure>
-				
+
 {% endfor %}
 
 			</div>
@@ -84,7 +75,7 @@ images:
 		</div><!-- END .wrapper -->
 	</section>
 
-<!-- jQuery -->    
+<!-- jQuery -->
 
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <!-- include image popups -->
@@ -111,7 +102,7 @@ image: {
 
 <script src="{{ site.baseurl }}/js/retina.min.js"></script>
 <!-- include Masonry -->
-<script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script> 
+<script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script>
 <!-- include mousewheel plugins -->
 <script src="{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
 <!-- include carousel plugins -->
@@ -123,5 +114,5 @@ image: {
 <!-- Modernizr -->
  <script src="{{ site.baseurl }}/js/modernizr.js"></script>
 
-    
+
 </body></html>
